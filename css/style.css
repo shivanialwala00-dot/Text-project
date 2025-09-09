@@ -1,0 +1,144 @@
+.main-container
+{
+    text-align:justify;
+    background-color:blueviolet;
+    display: flex;
+}
+.box
+{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    border-radius: 17px;
+}
+#box1
+{
+    background-color:brown;
+    transition: width 5s;
+}
+#box2
+{
+    background-color: darkgreen;
+    transition: width 5s;
+}
+#box3
+{
+    background-color:yellow;
+    transition: width 5s;
+}
+#box4
+{
+    background-color:red;
+    transition: width 5s;
+}
+#box5
+{
+    background-color:greenyellow;
+    transition: width 5s;
+}
+#box5:hover
+{
+    background-color:yellow;
+    width: 500px;
+    height: 250px;
+}
+#box4:hover
+{
+    background-color:hotpink;
+    width:500px;
+    height: 250px;
+}
+#box3:hover
+{
+    background-color:aqua;
+    width: 500px;
+    height: 250px;
+}
+#box2:hover
+{
+    background-color:gray;
+    width: 500px;
+    height: 250px;
+}
+#box1:hover
+{
+    background-color:blueviolet;
+    width: 500px;
+    height: 250px;
+}
+.newboxes
+{
+    border: 2px solid red;
+    display: flex;
+}
+.newbox
+{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    border-radius: 17px;
+}
+#box1
+{
+    background-color: cornflowerblue;
+    transition: width 2s;
+}
+#box2
+{
+    background-color: crimson;
+    transition: width 2s;
+}
+#box3
+{
+    background-color: chocolate;
+    transition: width 2s;
+}
+#box4
+{
+    background-color: aquamarine;
+    transition: width 2s;
+}
+#box5
+{
+    background-color: darkcyan;
+    transition: width 2s;
+}
+.newrotate
+{
+    width: 100px;
+    height: 100px;
+    background-color:16px ;
+    transition: width 2s,height 2s,transform 2s;
+}
+#newrotate:hover
+{
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+    transform: rotate (100deg);
+}
+
+.scrolltext
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    width: 100%;
+    color: cadetblue;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid red;
+    white-space: nowrap;
+}
+.scrolltext span
+{
+    display: inline-block;
+    padding-left: 100%;
+    animation-name: scroll-right-left;
+    animation-duration: 20s;
+}
+@keyframes scroll-right-left
+{
+    from{transform:translateX(100%)}
+    to{transform:translateX(-100%)}
+}
